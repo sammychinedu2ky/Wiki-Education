@@ -439,12 +439,16 @@ const listener = app.listen(process.env.PORT, () => {
 - Head over to the Facebook page you created and click on the view as Visitor button
 ![viewasvisitor](https://user-images.githubusercontent.com/36219292/95723637-44319200-0c6d-11eb-8648-f311ededf1d1.png)
  
- - Click on the **send message button** and start interacting with the bot by asking questions like:-
+ - Click on the **send message button**
+![clickonsendbutton](https://user-images.githubusercontent.com/36219292/95795746-08391400-0ce3-11eb-8826-3a0b316c7891.png)
+
+- Start interacting with the bot by asking questions like:-
     - who is Elon Musk
     - Where is Canada
     - Who is spider man etc
   - Wait a little bit and you would get a response.
-  
+  ![questionpreview](https://user-images.githubusercontent.com/36219292/95795839-433b4780-0ce3-11eb-886b-3367c8c6aa4e.png)
+
   > If the wit.ai platform doesn't parse the sent word properly you can still train it more for better accuracy.
   
 
