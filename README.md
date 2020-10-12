@@ -447,7 +447,11 @@ const listener = app.listen(process.env.PORT, () => {
     - Where is Canada
     - Who is spider man etc
   - Wait a little bit and you would get a response.
-  ![questionpreview](https://user-images.githubusercontent.com/36219292/95795839-433b4780-0ce3-11eb-886b-3367c8c6aa4e.png)
+  
+![questionpreview](https://user-images.githubusercontent.com/36219292/95796009-b9d84500-0ce3-11eb-9c4a-7f327de32858.png)
+
+
+
 
   > If the wit.ai platform doesn't parse the sent word properly you can still train it more for better accuracy.
   
