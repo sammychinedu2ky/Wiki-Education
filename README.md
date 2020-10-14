@@ -1,16 +1,15 @@
-
 # Wiki Education
 This tutorial describes how to build a Facebook Messenger chatbot application with the use of the wit.ai platform for natural language processing and the Wikipedia API to fetch information from Wikipedia
 
 ## Some keywords to know in this tutorial
 
- - wit.ai :- The wit.ai is a free natural language processing (NLP) platform created by Facebook. It helps make  NLP easy and seamless. It has support for different languages in both text and audio format. The cool part about this is that it is free and training a model here is as easy as clicking a button. It also has built-in default models that work so well too.
- - Facebook Messenger API:- The Facebook messenger API allows a user to interact with Facebook services, by performing actions via an HTTP request.
- - Wikipedia API:- The Wikipedia API allows you to easily fetch data in various format from Wikipedia through making an HTTP request.
- - Nodejs server:- The nodejs server allows us to write our server code in JavaScript and also let us interact with the API.
+ - wit.ai : The wit.ai is a free natural language processing (NLP) platform created by Facebook. It helps make  NLP easy and seamless. It has support for different languages in both text and audio format. The cool part about this is that it is free and training a model here is as easy as clicking a button. It also has built-in default models that work so well too.
+ - Facebook Messenger API: The Facebook messenger API allows a user to interact with Facebook services, by performing actions via an HTTP request.
+ - Wikipedia API: The Wikipedia API allows you to easily fetch data in various format from Wikipedia through making an HTTP request.
+ - Nodejs server: The nodejs server allows us to write our server code in JavaScript and also let us interact with the API.
 
 ## How this build Works
-This solution requires five major things:-
+This solution requires five major things:
  - wit.ai platform/ API
  - nodejs server
  - Facebook messenger API
@@ -25,6 +24,8 @@ This solution requires five major things:-
  
  A flow chart of the system design can be seen below for better understanding.
  ![flow chart of the system](https://bit.ly/33tpJZw)
+ 
+ <img width="300px" src="https://bit.ly/33tpJZw" />
  
  ## Benefit of this educational messenger bot
  - Users can utilize Facebooks free basic service to search for basic information without having data on your device.
