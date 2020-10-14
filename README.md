@@ -23,9 +23,9 @@ This solution requires five major things:
  Once the response is returned we would make an extra call to Wikipedia using the Wikipedia API, the returned information would be sent to the user on Messenger using the Messenger API. If no information is found on Wikipedia the user is sent a "not found" response.
  
  A flow chart of the system design can be seen below for better understanding.
- <center>
- <img width="500px" src="https://bit.ly/33tpJZw" />
- </center>
+ <div style="display:flex; justify-content: center">
+ <img width="500px" src="https://user-images.githubusercontent.com/40396070/96027782-4acc2f00-0e50-11eb-88e8-201ad175f609.png" />
+ </div>
  
  ## Benefit of this educational messenger bot
  - Users can utilize Facebooks free basic service to search for basic information without having data on your device.
@@ -132,7 +132,7 @@ This solution requires five major things:
 - Delete the template code written and paste the code below:-
 
    
-```
+```js
     const express = require("express");
     const app = express();
     let fetch = require("node-fetch");
@@ -157,6 +157,7 @@ This solution requires five major things:
       console.log("Your app is listening on port " + listener.address().port);
     });
  ```
+ 
  - You can go back to the Facebook app page with the modal opened and click on the **Verify and Save** button.
  - Next, you would need to set up the event to subscribe to. Since we need to be able to listen to messages sent from the Messenger platform, we would need to subscribe to the Message event.
  - So scroll down a little bit after setting the access token on the developers.facebook.com platform in the messenger tab of your wiki app.
@@ -171,12 +172,15 @@ The wit.ai API would allow us to make an API request. To view the wit.ai API det
  
  ### A sample request to wit.ai platform
  Curl request: 
- ```
+ 
+ ```bash
 curl --location --request GET 'https://api.wit.ai/message?v=20201011&q=who%20is%20superman' \
 --header 'Authorization: Bearer ${your_wit.ai_authorization_token}'
 ``` 
-would return:-
-```
+
+would return:
+
+```json
 {
     "text": "who is superman",
     "intents": [
@@ -209,14 +213,16 @@ would return:-
 From the wit.ai response, we would need to parse "wit$wikipedia_search_query:wikipedia_search_query" and obtain the **value** property of its first index.
 The value would be used to query Wikipedia and obtain details of the person. 
 
- ### A sample request to the Wikipedia API
- Curl Request:
- ```
+### A sample request to the Wikipedia API
+Curl Request:
+ ```bash
 curl --location --request GET 'https://en.wikipedia.org/api/rest_v1/page/summary/superman' 
 
 ```
-would return:-
-```
+
+would return:
+
+```json
 {
     "type": "standard",
     "title": "Superman",
@@ -274,14 +280,17 @@ This explains how the messenger bot obtains the information.
 - We would need to set up some details for our **.env** file.
 - On the Glitch platform, go to the .env file and append value for the keys below:
 > the {} symbol serves as a place holder in the code below. So set it with your detail.
-```
+
+```bash
 witaccess={your_wit.ai_authorization_token}
 fbapi={your_fbaccesstoken}
 ```
+
 - The messages from the messenger application on our page will be sent to our server using a POST request.
 - So next, I would be creating a POST request handler on Glitch
 > Don't copy the code below as I would post the final code at the end of the tutorial. The code below is a subset of the final code
-```
+
+```js
 app.post("/webhook", async (req, res) => {
   // extracts the message sent from the messenger application
   let [message] = req.body.entry[0].messaging;
@@ -298,7 +307,7 @@ app.post("/webhook", async (req, res) => {
 })
 ```
 - The code below extracts the required value (word ) that would be used to consume the Wikipedia API and also sends a GET request using the Wikipedia API
-```
+```js
   //tries to ensure that property to extract the value from the wit.ai response exists
   let mes;
   if (
@@ -320,7 +329,7 @@ app.post("/webhook", async (req, res) => {
 ```
 - Next after getting a response from the Wikipedia API we would need to use the Facebook API to send back a response to the user interacting with the Messenger app.
 - The code below does that 
-```
+```js
  // obtain the sender id from message object 
   let body = {
     recipient: {
@@ -347,7 +356,7 @@ back to the user on Messenger */
 
 ```
 Below is the total code is written for the node server.
-```
+```js
 const express = require("express");
 const app = express();
 let fetch = require("node-fetch");
