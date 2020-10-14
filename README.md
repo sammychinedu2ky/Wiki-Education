@@ -24,7 +24,7 @@ This solution requires five major things:
  
  A flow chart of the system design can be seen below for better understanding.
  <div style="display:flex; justify-content: center">
- <img width="500px" src="https://user-images.githubusercontent.com/40396070/96031498-53733400-0e55-11eb-8583-b6e6ff4746ff.png" />
+ <img src="https://user-images.githubusercontent.com/40396070/96031498-53733400-0e55-11eb-8583-b6e6ff4746ff.png" />
  </div>
  
  ## Benefit of this educational messenger bot
