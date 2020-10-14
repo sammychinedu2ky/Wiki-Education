@@ -23,9 +23,9 @@ This solution requires five major things:
  Once the response is returned we would make an extra call to Wikipedia using the Wikipedia API, the returned information would be sent to the user on Messenger using the Messenger API. If no information is found on Wikipedia the user is sent a "not found" response.
  
  A flow chart of the system design can be seen below for better understanding.
- ![flow chart of the system](https://bit.ly/33tpJZw)
- 
- <img width="300px" src="https://bit.ly/33tpJZw" />
+ <center>
+ <img width="500px" src="https://bit.ly/33tpJZw" />
+ </center>
  
  ## Benefit of this educational messenger bot
  - Users can utilize Facebooks free basic service to search for basic information without having data on your device.
