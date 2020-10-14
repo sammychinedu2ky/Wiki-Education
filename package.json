@@ -1,0 +1,23 @@
+{
+  "name": "wiki",
+  "version": "0.0.1",
+  "description": "A messenger bot .",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "express": "^4.17.1",
+    "body-parser": "1.1.0",
+    "node-fetch": "2.6.0"
+  },
+  "engines": {
+    "node": "12.x"
+  },
+  "license": "MIT",
+  "keywords": [
+    "node",
+    "glitch",
+    "express"
+  ]
+}
