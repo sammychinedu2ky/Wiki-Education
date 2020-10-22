@@ -1,5 +1,5 @@
 # Wiki Education
-This tutorial describes how to build a Facebook Messenger chatbot application with the use of the wit.ai platform for natural language processing and the Wikipedia API to fetch information from Wikipedia
+This tutorial describes how to build a Facebook Messenger chatbot application with the use of the wit.ai platform for natural language processing and the Wikipedia API to fetch information from Wikipedia. To access the repository for the server code click https://github.com/sammychinedu2ky/Wiki-Education/blob/main/server.js
 
 ## Some keywords to know in this tutorial
 
@@ -53,7 +53,8 @@ This solution requires five major things:
 | Please I want to know about Elon Musk | Elon Musk |
 | Where is Lagos | Lagos |
 | What is a car | Car |
- The purpose of this is to make use of the extracted word and make a query to the Wikipedia API which returns a piece of information if seen or it returns "not found"
+ 
+ > The purpose of this is to make use of the extracted word and make a query to the Wikipedia API which returns a piece of information if seen or it returns "not found"
 
 - At this point, we would train wit.ai to extract this by typing in some utterances. So type in **Who is Elon Musk** and highlight the words Elon Musk. A pop up would be displayed to select the entity of your choice. Scroll down to select  **wit/wikipedia_search_query**. The wit/wikipedia_search_query is an inbuilt entity but allows you to extract free text that can be used in a regular Wikipedia search. But wit.ai also allows you to create your custom queries. The picture below explains this as well.
 ![entity-selection](https://user-images.githubusercontent.com/36219292/95683548-f4f34f00-0be3-11eb-9456-3fcff7bedec9.png)
@@ -467,5 +468,7 @@ const listener = app.listen(process.env.PORT, () => {
   
 
   If your network is registered under the Facebook Free Basic program you should be able to still use the bot to query information from Wikipedia with or without data.
+  
+  To access the repository for the server code click https://github.com/sammychinedu2ky/Wiki-Education/blob/main/server.js
      
  At this point, we have come to the end of the tutorial. And I hope you enjoyed building the project.
