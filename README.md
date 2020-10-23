@@ -467,7 +467,11 @@ const listener = app.listen(process.env.PORT, () => {
   > If the wit.ai platform doesn't parse the sent word properly you can still train it more for better accuracy.
   
 
-  If your network is registered under the Facebook Free Basic program you should be able to still use the bot to query information from Wikipedia with or without data.
+   You can download the [free basic app](https://play.google.com/store/apps/details?id=com.freebasics&hl=en_ZA&gl=US) on playstore to access Facebook free basics plan on your android device which enables you use the bot without having data on your mobile phone.
+  
+  Most times, if your network is registered under the Free Basic plan, you would be allowed to use the Facebook bot automatically without having data on your device and this really helps you have access to information from wikipedia anytime you want.
+  
+  Please also do note that it is only available by registered network providers that support Facebook free basics
   
   To access the repository for the server code click https://github.com/sammychinedu2ky/Wiki-Education/blob/main/server.js
      
