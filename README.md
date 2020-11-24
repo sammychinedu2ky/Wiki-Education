@@ -470,3 +470,9 @@ Most times, if your network is registered under the Free Basic plan, you would b
 The file containing the server code can be found [here](https://github.com/sammychinedu2ky/Wiki-Education/blob/main/server.js)
      
 At this point, we have come to the end of the tutorial. And I hope you enjoyed building the project.
+
+## Credits
+1. [Wit.ai](https://wit.ai) for such an amazing simplified machine learning platform
+2. [Wikipedia API](https://en.wikipedia.org/api/rest_v1) for providing an easy to use API
+3. [Glitch](https://glitch.com) for simplifying prototyping
+4. Facebook messagener
