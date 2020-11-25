@@ -1,40 +1,11 @@
-# Wiki Education
-This tutorial describes how to build a Facebook Messenger chatbot application with the use of the wit.ai platform for natural language processing and the Wikipedia API to fetch information from Wikipedia. To access the repository for the server code click https://github.com/sammychinedu2ky/Wiki-Education/blob/main/server.js.
+---
+id: doc2
+title: Steps to build
+sidebar_label: Steps to build
 
-We also generated a documentation for this tutorial using Docusaurus. You can access it [here](https://wikieducation.netlify.app)
-![wikieducation](https://user-images.githubusercontent.com/36219292/100202825-1ee9a200-2f02-11eb-8f64-7992db4ecbe3.png)
+---
 
-
-## Some keywords to know in this tutorial
-
- - Wit.ai : The wit.ai is a free natural language processing (NLP) platform created by Facebook. It helps make  NLP easy and seamless. It has support for different languages in both text and audio format. The cool part about this is that it is free and training a model here is as easy as clicking a button. It also has built-in default models that work so well too.
- - Facebook Messenger API: The Facebook messenger API allows a user to interact with Facebook services, by performing actions via an HTTP request.
- - Wikipedia API: The Wikipedia API allows you to easily fetch data in various format from Wikipedia through making an HTTP request.
- - Nodejs server: The nodejs server allows us to write our server code in JavaScript and also let us interact with the API.
-
-## How this build Works
-This solution requires five major things:
- - Wit.ai platform/API
- - A Nodejs server
- - Facebook Messenger API
- - Wikipedia API
- - A Facebook page
-
-The wit.ai platform would be used to train a model that selects the word to search for from an interrogative statement. A Facebook page would be created to allow users to interact with the created messenger bot (DevC Wiki). The nodejs server would be used to listen to chat event from the messenger bot that would be made. Once a question is asked by a user interacting with the bot on the DevC Wiki Facebook page, a message event is triggered on our server with details of the message.
-
-The Wit platform also provides us with an API that allows users to interact with the wit.ai platform via an HTTP request. We would be training the wit.ai platform to select words from the chat application which would be consumed by the Wiki API and we would also have to make a call to the wit.ai platform providing the message from the chat using the API and the returned response provides the selected keywords from the message. Once the response is returned we would make an extra call to Wikipedia using the Wikipedia API, the returned information would be sent to the user on Messenger using the Messenger API. If no information is found on Wikipedia the user is sent a "not found" response.
- 
- A flow chart of the system design can be seen below for better understanding.
- <div style="display:flex; justify-content: center">
- <img src="https://user-images.githubusercontent.com/40396070/96031498-53733400-0e55-11eb-8583-b6e6ff4746ff.png" />
- </div>
- 
- ## Benefit of this educational messenger bot
- - Users can utilize Facebooks free basic service to search for basic information without having data on their device.
- - You don't need to leave the Facebook platform to search for basic  information
-- Interacting with the chatbot is seamless. 
- 
- ## Steps to build this Educational Bot
+## Steps to build this Educational Bot
  ### Training a model on the wit.ai platform
  - Login into [Wit.ai](https://wit.ai) and try to sign in with your Facebook account. 
  - Once, you are logged in, click on the "**new app**" button to create a new application that we would be using in this tutorial.
@@ -448,35 +419,3 @@ const listener = app.listen(process.env.PORT, () => {
 ```
 Great work so far. We  are done with the server setup!. We will proceed to test the Messenger bot
 
-# Testing the Messenger bot
-- Head over to the Facebook page you created and click on the `view as visitor` button
-![viewasvisitor](https://user-images.githubusercontent.com/36219292/95723637-44319200-0c6d-11eb-8648-f311ededf1d1.png)
- 
- - Click on the **send message button**
-![clickonsendbutton](https://user-images.githubusercontent.com/36219292/95795746-08391400-0ce3-11eb-8826-3a0b316c7891.png)
-
-- Start interacting with the bot by asking questions like:-
-    - who is Elon Musk
-    - Where is Canada
-    - Who is spider man etc
-  - Wait a little bit and you would get a response.
-  
-![questionpreview](https://user-images.githubusercontent.com/36219292/95796009-b9d84500-0ce3-11eb-9c4a-7f327de32858.png)
-
-
-  > If the wit.ai platform doesn't parse the sent word properly you can still train it more for better accuracy.
-  
-
-You can download the [free basic app](https://play.google.com/store/apps/details?id=com.freebasics&hl=en_ZA&gl=US) on playstore to access Facebook free basics plan on your android device which enables you use the bot without having data on your mobile phone.
-  
-Most times, if your network is registered under the Free Basic plan, you would be allowed to use the Facebook bot automatically without having data on your device and this really helps you have access to information from wikipedia anytime you want. Please also do note that it is only available by registered network providers that support Facebook free basics.
-  
-The file containing the server code can be found [here](https://github.com/sammychinedu2ky/Wiki-Education/blob/main/server.js)
-     
-At this point, we have come to the end of the tutorial. And I hope you enjoyed building the project.
-
-## Credits
-1. [Wit.ai](https://wit.ai) for such an amazing simplified machine learning platform
-2. [Wikipedia API](https://en.wikipedia.org/api/rest_v1) for providing an easy to use API
-3. [Glitch](https://glitch.com) for simplifying prototyping
-4. [Facebook messenger](https://developers.facebook.com/docs/messenger-platform/) for making the creation of a bot to be seamless
