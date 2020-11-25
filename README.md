@@ -1,5 +1,9 @@
 # Wiki Education
-This tutorial describes how to build a Facebook Messenger chatbot application with the use of the wit.ai platform for natural language processing and the Wikipedia API to fetch information from Wikipedia. To access the repository for the server code click https://github.com/sammychinedu2ky/Wiki-Education/blob/main/server.js
+This tutorial describes how to build a Facebook Messenger chatbot application with the use of the wit.ai platform for natural language processing and the Wikipedia API to fetch information from Wikipedia. To access the repository for the server code click https://github.com/sammychinedu2ky/Wiki-Education/blob/main/server.js.
+
+We also generated a documentation for this tutorial using Docusaurus. You can access it [here](https://wikieducation.netlify.app)
+![wikieducation](https://user-images.githubusercontent.com/36219292/100202825-1ee9a200-2f02-11eb-8f64-7992db4ecbe3.png)
+
 
 ## Some keywords to know in this tutorial
 
