@@ -1,0 +1,6 @@
+[submodule "Wiki-Education"]
+	path = Wiki-Education
+	url = https://github.com/sammychinedu2ky/Wiki-Education.git
+[submodule "wikisite"]
+	path = wikisite
+	url = https://github.com/sammychinedu2ky/wikisite.git
