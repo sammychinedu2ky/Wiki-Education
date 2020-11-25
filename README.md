@@ -30,7 +30,7 @@ The Wit platform also provides us with an API that allows users to interact with
  </div>
  
  ## Benefit of this educational messenger bot
- - Users can utilize Facebooks free basic service to search for basic information without having data on your device.
+ - Users can utilize Facebooks free basic service to search for basic information without having data on their device.
  - You don't need to leave the Facebook platform to search for basic  information
 - Interacting with the chatbot is seamless. 
  
